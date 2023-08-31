@@ -1,0 +1,227 @@
+:root {
+
+    /* Colors */
+    --clr-primary-100: hsl(0, 100%, 67%);
+    --clr-primary-200: hsl(39, 100%, 56%);
+    --clr-primary-300: hsl(166, 100%, 37%);
+    --clr-primary-400: hsl(234, 85%, 45%);
+
+    --clr-primary-accent-100: hsl(0, 100%, 85%);
+    --clr-primary-accent-200: hsl(39, 100%, 85%);
+    --clr-primary-accent-300: hsl(166, 100%, 85%);
+    --clr-primary-accent-400: hsl(234, 85%, 85%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(221, 100%, 96%);
+    --clr-neutral-300: hsl(241, 100%, 89%);
+    --clr-neutral-400: hsl(224, 30%, 27%);
+
+    /* Gradients */
+    --clr-gradient-bg-100: hsl(241, 81%, 54%);
+    --clr-gradient-bg-200: hsl(252, 100%, 67%);
+    --clr-gradient-circ-100: hsla(241, 72%, 46%, 1);
+    --clr-gradient-circ-200: hsla(256, 72%, 46%, 1);
+
+    /* Fonts */
+    --ff-primary: 'Hanken Grotesk', sans-serif;
+
+    --fs-400: 1.125rem;
+
+    --fw-normal: 500;
+    --fw-bold: 700;
+    --fw-bolder: 800;
+}
+
+/* Utility Classes */
+.clr-primary-100 {
+    color: var(--clr-primary-100);
+}
+
+.clr-primary-200 {
+    color: var(--clr-primary-200);
+}
+
+.clr-primary-300 {
+    color: var(--clr-primary-300);
+}
+
+.clr-primary-400 {
+    color: var(--clr-primary-400);
+}
+
+.bg-primary-100 {
+    background: var(--clr-primary-accent-100);
+}
+
+.bg-primary-200 {
+    background: var(--clr-primary-accent-200);
+}
+
+.bg-primary-300 {
+    background: var(--clr-primary-accent-300);
+}
+
+.bg-primary-400 {
+    background: var(--clr-primary-accent-400);
+}
+
+.bg-neutral-400 {
+    background: var(--clr-neutral-400);
+}
+
+.clr-neutral-100 {
+    color: var(--clr-neutral-100);
+}
+
+.clr-neutral-200 {
+    color: var(--clr-neutral-200);
+}
+
+.clr-neutral-300 {
+    color: var(--clr-neutral-300);
+}
+
+.clr-neutral-400 {
+    color: var(--clr-neutral-400);
+}
+
+.bg-lg-200-100 {
+    background: linear-gradient(var(--clr-gradient-bg-200), var(--clr-gradient-bg-100));
+}
+
+.circ-lg-200-100 {
+    background: linear-gradient(var(--clr-gradient-circ-200), var(--clr-gradient-circ-100));
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.ff-primary {
+    font-family: var(--ff-primary);
+}
+
+.fw-normal {
+    font-weight: var(--fw-normal);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-bolder {
+    font-weight: var(--fw-bolder);
+}
+
+.btn {
+    width: 100%;
+    padding: 1em 1em;
+    color: #fff;
+    border-radius: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Reset Code */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General Styling */
+.container {
+    width: fit-content;
+    font-size: 0.875rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.container__result {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1.5em 1em;
+}
+
+.result__padding {
+    padding: 1em;
+}
+
+.great__padding {
+    padding: 1em 1em 0.25em 1em;
+}
+
+.sum__padding {
+    padding: 0.5em 1em;
+}
+
+.container__score-container {
+    width: 8rem;
+    height: 8rem;
+    background-color: green;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__score {
+    font-size: 2.5rem;
+}
+
+.container__schigh {
+    width: 32ch;
+}
+
+.container__summary {
+    width: 100%;
+    padding: 1em 1em;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 0.5rem;
+    z-index: -1;
+}
+
+.summary__container {
+    margin-top: 0.25rem;
+}
+
+.container__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 0.5rem;
+    margin-block: 1rem;
+}
+
+.container__row-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+@media(min-width: 40em) {
+    .container {
+        display: flex;
+        width: 35rem;
+    }
+
+    .container {
+        border-radius: 1rem;
+    }
+
+    .container__result {
+        border-radius: 1rem;
+    }
+}

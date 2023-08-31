@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fs-400 ff-primary">
+  <main>
+    <div class="container">
+      <!-- Result Score -->
+      <div class="bg-lg-200-100 container__result">
+
+        <div>
+          <p class="clr-neutral-300 result__padding">Your Result</p>
+        </div>
+
+        <div class="container__score-container circ-lg-200-100">
+          <div class="clr-neutral-200 container__score fw-bolder">76</div>
+          <div class="clr-neutral-300">of 100</div>
+        </div>
+
+        <div>
+          <p class="clr-neutral-100 fw-bold great__padding">Great</p>
+        </div>
+
+        <div class="container__schigh-container">
+          <p class="clr-neutral-300 container__schigh">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+
+      <!-- Result Summary -->
+      
+      <div class="container__summary">
+        <div class="summary__container">
+          <p class="clr-neutral-400 fw-bold sum__padding">Summary</p>
+        </div>
+
+        <!-- 4 row layout -->
+        <div>
+          <div class="bg-primary-100 container__row">
+            <div class="container__row-item">
+              <img src="assets/images/icon-reaction.svg" alt="reaction">
+              <span class="clr-primary-100">Reaction</span>
+            </div>
+            <div class="container__row-item">
+              <span class="clr-neutral-400">80</span>
+              <span class="clr-neutral-200">/ 100</span>
+            </div>
+          </div>
+
+          <div class="bg-primary-200 container__row">
+            <div class="container__row-item">
+              <img src="assets/images/icon-memory.svg" alt="memory">
+              <span class="clr-primary-200">Memory</span></div>
+            <div class="container__row-item">
+              <span class="clr-neutral-400">92</span>
+              <span class="clr-neutral-200">/ 100</span>
+            </div>
+          </div>
+
+          <div class="bg-primary-300 container__row">
+            <div class="container__row-item">
+              <img src="assets/images/icon-verbal.svg" alt="verbal">
+              <span class="clr-primary-300">Verbal</span>
+            </div>
+            <div class="container__row-item">
+              <span class="clr-neutral-400">61</span>
+              <span class="clr-neutral-200">/ 100</span>
+            </div>
+          </div>
+
+          <div class="bg-primary-400 container__row">
+            <div class="container__row-item">
+              <img src="assets/images/icon-visual.svg" alt="visual">
+              <span class="clr-primary-400">Visual</span>
+            </div>
+            <div class="container__row-item">
+              <span class="clr-neutral-400">72</span>
+              <span class="clr-neutral-200">/ 100</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Button -->
+        <div>
+          <button class="btn bg-neutral-400 fw-bold">Continue</button>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
+
+<!-- <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://www.frontendmentor.io/profile/amrittiwari78" target="_blank">Amrit Tiwari</a>.
+</div> -->
